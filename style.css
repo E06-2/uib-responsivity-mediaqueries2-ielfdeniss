@@ -1,8 +1,115 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:  62.5%;
+}
+
+body{
+    font-weight: 400;
+    line-height: 1.7;
+}
+
 main {
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 li {
-    margin: 10px;
+    margin: 1rem;
+}
+
+/*Style the page for mobile*/
+@media screen and (max-width:600px){
+    main{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1rem 3rem;
+    }
+
+    h1{
+        font-size: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-weight: 500;
+        color: #090909;
+        text-align: center;
+    }
+    p,ol li{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: black;
+    }
+    ol{
+        padding-left: 5rem;
+    }
+
+}
+/*Style the page for table*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    main {
+      margin: 2rem 5rem;
+      font-family: 'Courier New', Courier, monospace;
+      color: #da73d3;
+    }
+  
+    h1 {
+      font-size: 6rem;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+      font-weight: 600;
+      color: #da73d3;
+     
+    }
+  
+    p,
+    ol li {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    
+    }
+  
+    ol {
+      padding-left: 5rem;
+    }
+  
+}
+ /*Style the page for desktop*/
+  @media screen and (min-width: 1200px) {
+    body{
+        background-color: #f8ff95;
+    }
+    
+    main {
+      margin: 4rem 8rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  
+    h1 {
+      font-size: 7rem;
+      margin-top: 7rem;
+      margin-bottom: 7rem;
+      font-weight: 700;
+      color: #da73d3;
+    }
+  
+    p,
+    ol li {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+      color: #a16f85;
+    }
+  
+    ol {
+      padding-left: 10rem;
+    }
+  
+   
+    ol li::first-letter{
+      font-size: 4rem;
+      color: red;
+   } 
 }
